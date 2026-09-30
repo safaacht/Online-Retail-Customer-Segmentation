@@ -1,0 +1,8 @@
+services:
+  streamlit:
+    build: .
+    container_name: online-retail-streamlit
+    ports:
+      - "8501:8501"
+    volumes:
+      - .:/app
