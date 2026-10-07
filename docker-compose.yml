@@ -5,7 +5,8 @@ services:
     ports:
       - "8502:8501"
     volumes:
-      - .:/app
+      - ./app
+      - ./models:/app/models
 
   jupyter:
     build: .
